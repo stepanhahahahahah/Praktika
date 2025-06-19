@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="POST" style="margin-top: 4.5rem;">
+  <h2>Редактирование клиента</h2>
+  <input type="hidden" id="id-input" name="id" value="{{client.id}}">
+  <div class="form-name">
+    <label for="name">Юзернейм</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Pupkin" value="{{client.name}}">
+  </div>
+  <div class="form-start_date">
+    <label for="start_date">Дата начала абонемента</label>
+    <input type="text" class="form-control" id="start_date-input" name="start_date" placeholder="19.06.2025" value="{{client.start_date}}">
+  </div>
+  <div class="form-end_date">
+    <label for="end_date">Дата окончания абонемента</label>
+    <input type="text" class="form-control" id="end_date-input" name="end_date" placeholder="19.07.2025"  value="{{client.end_date}}">
+  </div>
+  <button type="submit" class="btn btn-success mt-2">Изменить</button>
+</form>
+{% endblock %}

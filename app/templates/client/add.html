@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="POST" style="margin-top: 4.5rem;">
+  <h2>Добавление клиента</h2>
+  <div class="form-group">
+    <label for="name">Юзернейм</label>
+    <input type="text" class="form-control" id="name-input" name="name" placeholder="Pupkin">
+  </div>
+  <div class="form-group">
+    <label for="start_date">Дата начала абонемента</label>
+    <input type="date" class="form-control" id="start_date-input" name="start_date" placeholder="19.06.2025">
+  </div>
+  <div class="form-group">
+    <label for="end_date">Дата окончания абонемента</label>
+    <input type="date" class="form-control" id="end_date-input" name="end_date" placeholder="19.07.2025">
+  </div>
+  <button type="submit" class="btn btn-success mt-2">Добавить</button>
+</form>
+{% endblock %}
