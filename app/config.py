@@ -12,6 +12,8 @@ class Config:
     DB_USER = os.getenv('DB_USER')
     DB_PASSWORD = os.getenv('DB_PASSWORD')
 
+    IMGS = os.getenv('IMGS', 'imgs')
+
     #Секретный ключ для авторизации
     SECRET_KEY = os.urandom(24)
     REMEMBER_COOKIE_SECURE = True

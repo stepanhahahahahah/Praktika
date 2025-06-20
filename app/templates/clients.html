@@ -19,12 +19,13 @@
             <tr>
                 <td>{{ client.id }}</td>
                 <td>
-                    <img src="/client/photo/{{ client.id }}.png" style="width: 200px; height: 200px; object-fit: cover;">
+                    <img src="/client/photo/{{ client.id }}" style="width: 200px; height: 200px; object-fit: cover;">
                 </td>
                 <td>{{ client.name }}</td>
                 <td>{{ client.start_date }}</td>
                 <td>{{ client.end_date}}</td>
                 <td>
+                    <a class="btn btn-outline-primary" href="/client/photo-edit/{{client.id}}">Изменить фото</a>
                     <a class="btn btn-outline-warning" href="/client/edit/{{client.id}}">Изменить</a>
                     <a class="btn btn-outline-danger" href="/client/del/{{client.id}}">Удалить</a>
                 </td>
