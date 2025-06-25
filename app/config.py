@@ -14,6 +14,10 @@ class Config:
 
     IMGS = os.getenv('IMGS', 'imgs')
 
+
+    TELEGRAM_URL = os.getenv('TELEGRAM_URL', '')
+    TELEGRAM_API_KEY = os.getenv('TELEGRAM_API_KEY', '')
+
     #Секретный ключ для авторизации
     SECRET_KEY = os.urandom(24)
     REMEMBER_COOKIE_SECURE = True
